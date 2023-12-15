@@ -3,10 +3,10 @@ import "./secondaryBtn.css";
 
 const SecondaryBtn = ({ text, icon }) => {
   return (
-    <button className="secondary-btn">
+    <a className="secondary-btn">
       <span className="secondary-btn-text">{text}</span>
       <span>{icon}</span>
-    </button>
+    </a>
   );
 };
 
