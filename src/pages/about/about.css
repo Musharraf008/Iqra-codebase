@@ -1,41 +1,75 @@
+.about-container header {
+  /* background: #252525; */
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: bold;
 
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 2rem;
+}
+.about-upper-section {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.2);
+  gap: 1px;
+}
+.about-first-intro-wrapper,
+.about-intro-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+.about-first-intro-wrapper h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.about-first-intro-wrapper img,
+.about-intro-wrapper img {
+  width: 35%;
+}
+.about-intro-wrapper p {
+  width: 40%;
+  font-size: .9rem;
+  font-weight: bold;
+  color: #252525;
+  font-family: "Space Grotesk", sans-serif;
+}
 
+/* LOWER ABOUT SECTION */
+.about-lower-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.about-profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem;
+}
+.about-profile-wrapper img {
+  width: 50%;
+}
+.about-profile-text-wrapper {
+  color: #252525;
+}
+.about-profile-text-wrapper h1 {
+  font-size: 3rem;
+  line-height: 100%;
 
-.about-container header{
-    background: #252525;
-    padding: 1rem 0;
-    text-align: center;
-    font-weight: bold;
-    
-    letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 2rem;
+  color: rgba(0, 0, 0, 0.4);
+  /* background: #ff6f6f; */
 }
-.about-upper-section{
-    display: flex;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.2);
-    gap: 1px;
-}
-.about-first-intro-wrapper{
-    /* margin-top: 1px; */
-}
-.about-first-intro-wrapper, .about-intro-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #ffffff;
-    padding: 3rem;
-}
-.about-first-intro-wrapper h1{
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-.about-first-intro-wrapper img, .about-intro-wrapper img{
-    width: 35%
-}
-.about-intro-wrapper p{
-    width: 40%;
-    font-size: .8rem;
+.about-profile-text-wrapper p {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: bold;
 }

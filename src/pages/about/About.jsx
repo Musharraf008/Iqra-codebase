@@ -6,6 +6,14 @@ import about3 from "../../assets/images/about-3.svg";
 import about4 from "../../assets/images/about-4.svg";
 import about5 from "../../assets/images/about-5.svg";
 
+import aboutProfile1 from "../../assets/images/about-profile-1.svg";
+import aboutProfile2 from "../../assets/images/about-profile-2.svg";
+import aboutProfile3 from "../../assets/images/about-profile-3.svg";
+import aboutProfile4 from "../../assets/images/about-profile-4.svg";
+import aboutProfile5 from "../../assets/images/about-profile-5.svg";
+
+import Footer from "../../components/footer/Footer";
+
 const About = () => {
   const upperInfo = [
     {
@@ -26,9 +34,42 @@ const About = () => {
     },
   ];
 
+  const profileInfo = [
+    {
+      img: aboutProfile1,
+      post: "Director",
+      name: "Md Nasir Jamal",
+      des: "Hello, My name is Md. Nasir Jamal, I am director of IQRA coaching centre, The institute managed and run by myself, I also  teach students in their course study and motivating them to achieve their goals.",
+    },
+    {
+      img: aboutProfile2,
+      post: "Instructor",
+      name: "Musharraf Jamal",
+      des: "Hello, My name is Musharraf Jamal, I designed and developed this whole site, and I am one of the instructor of IQRA coaching centre, I teach students how to be more productive and helping them to achieving their goals as well as course study",
+    },
+    {
+      img: aboutProfile3,
+      post: "Director",
+      name: "Md Nasir Jamal",
+      des: "Hello, My name is Md. Nasir Jamal, I am director of IQRA coaching centre, The institute managed and run by myself, I also  teach students in their course study and motivating them to achieve their goals.",
+    },
+    {
+      img: aboutProfile4,
+      post: "Director",
+      name: "Md Nasir Jamal",
+      des: "Hello, My name is Md. Nasir Jamal, I am director of IQRA coaching centre, The institute managed and run by myself, I also  teach students in their course study and motivating them to achieve their goals.",
+    },
+    // {
+    //   img: aboutProfile5,
+    //   post: "Director",
+    //   name: "Md Nasir Jamal",
+    //   des: "Hello, My name is Md. Nasir Jamal, I am director of IQRA coaching centre, The institute managed and run by myself, I also  teach students in their course study and motivating them to achieve their goals.",
+    // },
+  ];
+
   return (
     <div className="about-container">
-        <header>About</header>
+      <header>About</header>
       <div className="about-upper-section">
         <div className="about-first-intro-wrapper">
           <div>
@@ -52,7 +93,24 @@ const About = () => {
           );
         })}
       </div>
+      <header>OUR INSTRUCTORS</header>
+      <div className="about-lower-section">
+        {profileInfo.map((info) => {
+          return (
+            <div className="about-profile-wrapper">
+              <img src={info.img} alt="" />
+              <div className="about-profile-text-wrapper">
+                <h1>{info.post}</h1>
+                <h3>{info.name}</h3>
+                <p>{info.des}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+        <Footer />
     </div>
+
   );
 };
 

@@ -5,7 +5,8 @@ const SecondaryBtn = ({ text, icon }) => {
   return (
     <a className="secondary-btn">
       <span className="secondary-btn-text">{text}</span>
-      <span>{icon}</span>
+      {icon ? <span>{icon}</span> : null}
+      {/* <span>{icon}</span> */}
     </a>
   );
 };

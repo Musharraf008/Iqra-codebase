@@ -1,69 +1,69 @@
 .home-container {
-  background-image: url(../../assets/images/home-bg.jpg);
+  background-image: url(../../assets/images/home-bg.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
   /* overflow: hidden; */
   position: relative;
 }
-.home-blur-bg {
-  height: calc(100% - 6rem);
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(7.5px);
+.home-nav-wrapper {
   position: absolute;
+  width: 100vw;
+}
+.home-wrapper {
+  height: 100%;
   display: flex;
+  gap: 10rem;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  padding: 7rem 0;
 }
-.home-heading-wrapper {
-  font-family: Days One;
-  display: flex;
-  align-items: last baseline;
-  gap: 10px;
-  color: rgba(255, 255, 255, 0.5);
+.home-upper-wrapper {
+  /* background-color: brown; */
+  font-family: Dela Gothic One;
+  color: white;
+  padding-left: 2.5rem;
 }
-.green-color {
+.home-upper-wrapper h1,
+.potential-text,
+.home-at-wrapper span {
+  font-size: 4rem;
+  line-height: 120%;
+}
+.potential-text {
   background: linear-gradient(
-    90deg,
-    rgba(0, 255, 56) 1.02%,
-    rgba(0, 224, 90) 30.56%
+    234deg,
+    #99fffa 23.38%,
+    #f090ff 59.74%,
+    #ffc977 93.19%
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.home-heading-wrapper h1 {
-  font-size: 3rem;
-  letter-spacing: 5px;
+.home-at {
+  margin-bottom: 15px;
 }
-.potential-wrapper{
-    line-height: 170%;
-}
-.potential-wrapper h1 {
-  color: rgba(255, 255, 255, 0.1);
-}
-.potential-wrapper span {
-  font-size: 1rem;
-  font-family: poppins;
-}
-.home-iqra-heading {
-  font-family: PT Serif Caption;
-  font-style: italic;
-  letter-spacing: 0.3rem;
-  font-size: 2.5rem;
+
+.home-lower-wrapper {
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
 }
-.home-iqra-heading span {
-  background: linear-gradient(180deg, #ffbc57 0%, #ed8f00 100%);
+.home-lower-wrapper h1 {
+  font-family: PT Serif Caption;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  font-style: italic;
+  line-height: 100%;
+}
+.home-lower-wrapper h1 span{
+    background: linear-gradient(180deg, #ffbc57 0%, #ed8f00 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.home-heading-p{
-    letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.75);
 }

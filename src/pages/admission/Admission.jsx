@@ -12,7 +12,36 @@ import bgImg from "../../assets/images/admission-illustration.svg";
 const Admission = () => {
   return (
     <div className="admission-container">
-      <header className="admission-heading-text-wrapper">
+      <header>How to get admission online?</header>
+      <div className="admission-wrapper">
+        <div className="admission-left-container">
+          <h1>FOLLOW THESE SIMPLE STEPS TO GET ADMISSION ONLINE</h1>
+          <ul>
+            <li>Click here!, To download the fee structure.</li>
+            <li>Click on take admission button down below.</li>
+            <li>
+              Fill up the form and pay your admission fee along with your first
+              month class fee.
+            </li>
+          </ul>
+          <div className="btns-wrapper">
+            <SecondaryBtn text="Fee structure" />
+            <PrimaryBtn
+              text="Fill up form"
+              icon={<img src={takeAdmissionIcon} style={{ width: "1.2rem" }} />}
+            />
+          </div>
+        </div>
+        <div className="admission-right-container"><img src={bgImg} alt="" /></div>
+      </div>
+    </div>
+  );
+};
+
+export default Admission;
+
+{
+  /* <header className="admission-heading-text-wrapper">
         <h1>To take admission in our coaching,</h1>
         <p>
           <span>you need to follow the given steps</span> <FaArrowTurnDown />
@@ -57,9 +86,5 @@ const Admission = () => {
           alt=""
           
         />
-      </main>
-    </div>
-  );
-};
-
-export default Admission;
+      </main> */
+}

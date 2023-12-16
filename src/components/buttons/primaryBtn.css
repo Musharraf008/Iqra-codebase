@@ -1,20 +1,22 @@
 .primary-btn {
   display: flex;
-  padding: .8rem 2rem;
+  padding: .5rem 1rem;
   justify-content: center;
   align-items: center;
   gap: 5px;
   border: none;
-  background: #252525;
+  background: #FFC977;
   box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, 0.05) inset;
   cursor: pointer;
   border-radius: 5px;
   transition: all 400ms linear;
-  color: white;
+  color: rgba(0, 0, 0, 0.75);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .primary-btn-text{
     font-size: .8rem;
-    letter-spacing: 2px;
+    font-weight: bold;
+    /* letter-spacing: 1px; */
 }
 .primary-btn:hover{
   transform: translateY(-5px);

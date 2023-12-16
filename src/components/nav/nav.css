@@ -1,6 +1,6 @@
 .nav-container {
-  background-color: white;
-  padding: 1rem 2rem;
+  /* background-color: white; */
+  padding: 1rem 2.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,14 +27,14 @@
   gap: 1.5rem;
 }
 .nav-btns-wrapper a {
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
   text-decoration: none;
   transition: all 400ms linear;
   font-weight: 500;
 }
 .nav-btns-wrapper a:hover{
     /* transform: translateY(-5px); */
-    color: black;
+    color: #FFC977;
 
 }
 .right-nav-wrapper {

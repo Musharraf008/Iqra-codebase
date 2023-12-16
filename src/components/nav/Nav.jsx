@@ -6,6 +6,7 @@ import SecondaryBtn from "../buttons/SecondaryBtn";
 
 import { RiBubbleChartFill } from "react-icons/ri";
 import { MdFaceRetouchingNatural } from "react-icons/md";
+import takeAdmissionIcon from '../../assets/icons/take-admission-icon.svg'
 
 const Nav = () => {
   return (
@@ -21,8 +22,8 @@ const Nav = () => {
         </div>
       </div>
       <div className="right-nav-wrapper">
-        <SecondaryBtn text="Pay fee" icon={<RiBubbleChartFill size={20} color="#252525" />} />
-        <PrimaryBtn text="Take admission" icon={<MdFaceRetouchingNatural size={20} color="white" />} />
+        {/* <SecondaryBtn text="Pay fee" icon={<RiBubbleChartFill size={20} color="#252525" />} /> */}
+        <PrimaryBtn text="Take admission" icon={<img src={takeAdmissionIcon} />} />
       </div>
     </div>
   );
