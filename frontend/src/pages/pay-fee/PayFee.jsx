@@ -7,7 +7,9 @@ import { IoMdCheckmarkCircle } from "react-icons/io";
 const PayFee = () => {
   return (
     <div className="admission-form-container">
-      <Nav alternate={true} />
+      <div style={{position: 'absolute'}}>
+        <Nav alternate={true} />
+      </div>
       <div className="admission-form-wrapper">
         <div className="left-adm-form">
           <h1>IQRA</h1>

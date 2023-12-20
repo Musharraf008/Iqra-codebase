@@ -84,9 +84,9 @@ const About = () => {
           </div>
           <img src={about1} alt="" />
         </div>
-        {upperInfo.map((info) => {
+        {upperInfo.map((info, index) => {
           return (
-            <div className="about-intro-wrapper">
+            <div className="about-intro-wrapper" key={index}>
               <p>{info.des}</p>
               <img src={info.img} alt="" />
             </div>
@@ -95,9 +95,9 @@ const About = () => {
       </div>
       <header>OUR INSTRUCTORS</header>
       <div className="about-lower-section">
-        {profileInfo.map((info) => {
+        {profileInfo.map((info, index) => {
           return (
-            <div className="about-profile-wrapper">
+            <div className="about-profile-wrapper" key={index}>
               <img src={info.img} alt="" />
               <div className="about-profile-text-wrapper">
                 <h1>{info.post}</h1>

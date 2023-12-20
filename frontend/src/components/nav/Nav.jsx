@@ -13,7 +13,6 @@ const Nav = ({ alternate }) => {
         <div
           className="left-nav-wrapper"
           style={{
-            position: "absolute",
             margin: '1rem 2.5rem'
           }}
         >
