@@ -1,6 +1,5 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
 const cors = require("cors");
 const Students = require("./model/schema");
 
@@ -22,9 +21,6 @@ db.once("open", () => {
 
 app.use(cors());
 app.use(express.json());
-
-// Middleware to parse request bodies as JSON
-app.use(bodyParser.json());
 
 
 app.get("/students", async (req, res) => {
