@@ -10,7 +10,7 @@ const Students = () => {
   // Fetch data from backend
   useEffect(() => {
     axios
-      .get("http://localhost:5000/students")
+      .get("https://iqra-backend-35cn.onrender.com/students")
       .then((response) => {
         setUsers(response.data);
       })
